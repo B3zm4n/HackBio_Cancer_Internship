@@ -1,0 +1,135 @@
+---
+title: "Project:Extreme Plotting in R"
+output: html_notebook
+---
+This is a R markdown on plots in R with variations.
+
+### DATASET
+```{r}
+set.seed(1001)
+x1 = 1:100 + rnorm(100, mean = 0, sd = 15)
+y1 = 1:100
+```
+
+
+```{r}
+plot(x = x1, y = y1)
+# mtext(side = 2, text = 'hi there')
+
+
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers')
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+mtext(side = 3, text = 'hi there')
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+mtext(side = 2, text = 'hi there')
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+mtext(side = 3, text = paste('hi there'))
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+# mtext(side = 3, text = 'hi there')
+
+cor_mea <- cor(x1, y1, method = 'pearson')
+
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec')
+
+cor_mea <- cor(x1, y1, method = 'pearson')
+mtext(side = 3, text = paste(cor_mea))
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec', col = 'red')
+
+cor_mea <- cor(x1, y1, method = 'pearson')
+mtext(side = 3, text = paste(cor_mea))
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec', col = 'red', pch = 19)
+
+cor_mea <- cor(x1, y1, method = 'pearson')
+mtext(side = 3, text = paste(cor_mea))
+```
+
+```{r}
+plot(x = x1, y = y1, main = 'Random Numbers', xlab = 'xvec', ylab = 'yvec', col = 'red', pch = 18)
+
+cor_mea <- cor(x1, y1, method = 'pearson')
+mtext(side = 3, text = paste(cor_mea))
+```
+
+```{r}
+hist(x1)
+```
+
+```{r}
+hist( x1, main = 'Histogram of xvec', xlab = 'Range of xvec', ylab = 'Frequency of xvec', col = 'brown')
+```
+
+```{r}
+boxplot(y1)
+```
+
+```{r}
+boxplot(x1, y1)
+```
+
+```{r}
+boxplot(x1, y1, horizontal = TRUE, col = 'violet')
+```
+
+```{r}
+par(mfrow = c(2,1))
+
+```
+
+```{r}
+par(mfrow = c(2,1))
+
+boxplot(x1, y1)
+hist(x1)
+```
+
+```{r}
+par(mfrow = c(1,2))
+
+boxplot(x1, y1, col = 'pink', bg = 'red')
+hist(y1, col = 'purple', bg = 'orange')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

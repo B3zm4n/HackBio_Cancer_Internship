@@ -1,2 +1,2 @@
-![Watch the video](https://raw.githubusercontent.com/B3zm4n/HackBio_Cancer_Internship/main/HackBio_Stage_5/thumbnail.png)
-(https://raw.githubusercontent.com/B3zm4n/HackBio_Cancer_Internship/main/HackBio_Stage_5/Hackolite1.mp4)
+[Watch the presentation on Google Drive]
+([https://drive.google.com/file/d/VIDEO_ID/view](https://drive.google.com/file/d/1TSAspX-ZY9h1JgmPFXi7IY9DT9nvoleI/view?usp=drive_link))
